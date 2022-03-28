@@ -1,0 +1,24 @@
+{
+  "name": "test/plugin-wpcs",
+  "description": "Plugin with WPCS",
+  "authors": [
+    {
+      "name": "Author",
+      "email": "david@shellcreeper.com"
+    }
+  ],
+  "require": {
+  },
+  "require-dev": {
+    "wp-coding-standards/wpcs": "^2.3",
+    "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2"
+  },
+  "scripts": {
+    "lint": "phpcs -s --standard=./phpcs.xml --basepath=. --warning-severity=8 . > lint.txt",
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    }
+  }
+}
