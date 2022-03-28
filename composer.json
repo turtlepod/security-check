@@ -14,7 +14,7 @@
     "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2"
   },
   "scripts": {
-    "lint": "phpcs -s --standard=./phpcs.xml --basepath=. --warning-severity=8 . > lint.txt",
+    "lint": "phpcs -s --standard=./phpcs.xml --basepath=. --warning-severity=8 . > lint.txt"
   },
   "config": {
     "allow-plugins": {
